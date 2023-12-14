@@ -1,4 +1,14 @@
 <div class="container mt-4">
+  <div class="row mb-3">
+    <div class="col-md-8 input-group">
+        <input type="text" class="form-control" [(ngModel)]="keyword" placeholder="Search by name...">
+        <div class="input-group-append">
+            <button class="btn btn-primary" (click)="searchProducts()">
+                <i class="bi bi-search"></i>
+            </button>
+        </div>
+    </div>
+</div>
     <h2>Product List</h2>
     <table class="table">
       <thead>

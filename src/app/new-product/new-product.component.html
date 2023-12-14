@@ -21,6 +21,6 @@
             <label class="form-check-label" for="productChecked">Checked</label>
         </div>
 
-        <button type="submit" class="btn btn-primary">Add Product</button>
+        <button [disabled]="productForm.invalid" type="submit" class="btn btn-primary">Add Product</button>
     </form>
 </div>

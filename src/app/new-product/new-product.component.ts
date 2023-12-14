@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ProductService } from '../services/product.service';
 import { Product } from '../model/product.model';
 
@@ -15,8 +15,8 @@ export class NewProductComponent implements OnInit{
 
   ngOnInit(): void {
     this.productForm = this.formBuilder.group({
-      name:this.formBuilder.control(''),
-      price:this.formBuilder.control(''),
+      name:this.formBuilder.control('',Validators.required),
+      price:this.formBuilder.control(0),
       description:this.formBuilder.control(''),
       checked:this.formBuilder.control(false)
     });     

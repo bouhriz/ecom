@@ -10,7 +10,8 @@ import { Product } from '../model/product.model';
 })
 export class ProductsComponent implements OnInit{
 
-  products: Array<Product> = [];
+  public products: Array<Product> = [];
+  public keyword: string="";
 
   constructor(private productService:ProductService){}
   
@@ -51,6 +52,12 @@ export class ProductsComponent implements OnInit{
       });
     }
   }
+
+  searchProducts() {
+    this.productService.searchProducts(this.keyword).subscribe({
+      next:data=>{this.products=data;}
+    });
+    }
   
   
 }
