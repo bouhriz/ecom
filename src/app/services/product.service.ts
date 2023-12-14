@@ -20,4 +20,8 @@ export class ProductService {
   public deleteProduct(product:Product){
     return this.http.delete<Product>(`http://localhost:3000/products/${product.id}`);
   }
+
+  saveProduct(product: Product):Observable<Product> {
+    return this.http.post<Product>(`http://localhost:3000/products`,product);
+  }
 }
