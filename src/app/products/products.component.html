@@ -17,6 +17,7 @@
           <td>${{ product.price }}</td>
           <td>{{ product.description }}</td>
           <td><button (click)="handleCheckProduct(product)"><i [class]="product.checked?'bi bi-check':'bi bi-circle'"></i></button> </td>
+          <td><button (click)="handleDelete(product)" class="btn btn-outline-danger"><i class="bi bi-trash"></i></button></td>
         </tr>
       </tbody>
     </table>
