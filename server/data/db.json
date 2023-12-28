@@ -1,31 +1,45 @@
 {
   "products": [
     {
-      "id": 2,
+      "id": 1,
       "name": "Phone X",
       "price": 699.99,
       "description": "A high-end smartphone with advanced features.",
       "checked": false
     },
     {
-      "id": 3,
+      "id": 2,
       "name": "Laptop Pro",
       "price": 1299.99,
       "description": "Powerful laptop for professional use.",
       "checked": true
     },
     {
-      "id": 4,
+      "id": 3,
       "name": "Smart TV",
       "price": 599.99,
       "description": "Ultra HD Smart TV with built-in streaming services.",
       "checked": false
     },
     {
-      "id": 5,
+      "id": 4,
       "name": "Wireless Earbuds",
       "price": 99.99,
       "description": "Bluetooth earbuds with noise cancellation.",
+      "checked": true
+    },
+    {
+      "id": 5,
+      "name": "Laptop Pro",
+      "price": 1299.99,
+      "description": "Powerful laptop for professional use.",
+      "checked": true
+    },
+    {
+      "id": 6,
+      "name": "Smart TV",
+      "description": "Ultra HD Smart TV with built-in streaming services.",
+      "price": 559.99,
       "checked": true
     }
   ]
