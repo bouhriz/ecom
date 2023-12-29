@@ -41,7 +41,7 @@ export class ProductsComponent implements OnInit{
       error : err =>{
         this.appStateService.setProductState({
           status: "ERROR",
-          errorMessage:"Error updating products"
+          errorMessage:"An error occurred. Please try again."
         });
       }
    })

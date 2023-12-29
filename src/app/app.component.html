@@ -1,32 +1,5 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light p-3">
-    <ul class="navbar-nav">
-        <!--
-        <li class="nav-item">
-            <button routerLink="/home" class="nav-link btn btn-primary">
-                <i class="bi-house-door"></i> Home
-            </button>
-        </li>
-        <li class="nav-item">
-            <button routerLink="/products" class="nav-link btn btn-primary">
-                <i class="bi-box"></i> Products
-            </button>
-        </li>
-        <li class="nav-item">
-            <button routerLink="/new-product" class="nav-link btn btn-primary">
-                <i class="bi-plus-circle"></i> New Product
-            </button>
-        </li>
-        -->
-        <li class="nav-item" *ngFor="let action of actions">
-            <button (click)="setCurrentAction(action)" routerLink="{{action.route}}" [class]="action==currentAction?'btn btn-success':'btn btn-outline-success'">
-                <i class="{{action.icon}}"></i> {{action.title}}
-            </button>
-        </li>
-    </ul>
-</nav>
-
+<app-navbar></app-navbar>
 <app-dashboard></app-dashboard>
-
+<app-app-errors></app-app-errors>
 <router-outlet>
-
 </router-outlet>

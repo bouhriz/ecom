@@ -36,11 +36,11 @@
       "checked": true
     },
     {
-      "id": 6,
-      "name": "Smart TV",
-      "description": "Ultra HD Smart TV with built-in streaming services.",
-      "price": 559.99,
-      "checked": true
+      "name": "test",
+      "price": 222,
+      "description": "sasasasa",
+      "checked": true,
+      "id": 6
     }
   ]
 }
