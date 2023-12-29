@@ -5,7 +5,7 @@
       "name": "Phone X",
       "price": 699.99,
       "description": "A high-end smartphone with advanced features.",
-      "checked": false
+      "checked": true
     },
     {
       "id": 2,

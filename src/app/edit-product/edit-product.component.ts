@@ -42,6 +42,9 @@ export class EditProductComponent implements OnInit{
     this.productService.updateProduct(product).subscribe({
       next : data=>{
         alert("Product updated")
+      },
+      error: err=>{
+        console.log(err);
       }
     });
     }

@@ -1,7 +1,7 @@
 <div class="container mt-4">
   <div class="row mb-3">
     <div class="col-md-8 input-group">
-        <input type="text" class="form-control" [(ngModel)]="keyword" placeholder="Search by name...">
+        <input type="text" class="form-control" [(ngModel)]="appStateService.productState.keyword" placeholder="Search by name...">
         <div class="input-group-append">
             <button class="btn btn-primary" (click)="searchProducts()">
                 <i class="bi bi-search"></i>
@@ -21,7 +21,7 @@
         </tr>
       </thead>
       <tbody>
-        <tr *ngFor="let product of products">
+        <tr *ngFor="let product of appStateService.productState.products">
           <td>{{ product.id }}</td>
           <td>{{ product.name }}</td>
           <td>${{ product.price }}</td>
@@ -34,9 +34,9 @@
       </tbody>
     </table>
     <ul class="nav nav-pills">
-      <li *ngFor="let page of [].constructor(this.totalPages); let i = index">
+      <li *ngFor="let page of [].constructor(this.appStateService.productState.totalPages); let i = index">
         <button (click)="handleGoToPage(i + 1)" 
-          [ngClass]="currentPage === (i + 1) ? 'btn btn-success m-1' : 'btn btn-outline-success m-1'">
+          [ngClass]="appStateService.productState.currentPage === (i + 1) ? 'btn btn-success m-1' : 'btn btn-outline-success m-1'">
           {{ i + 1 }}
         </button>
       </li>
