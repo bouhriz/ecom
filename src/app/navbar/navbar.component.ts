@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { AppStateService } from '../services/app-state.service';
+import { LoadingService } from '../services/loading.service';
 
 @Component({
   selector: 'app-navbar',
@@ -15,7 +16,7 @@ export class NavbarComponent {
   
   currentAction :any;
 
-  constructor(public appStateService:AppStateService){}
+  constructor(public appStateService:AppStateService, public loadingService:LoadingService){}
 
   setCurrentAction(action: any) {
     this.currentAction=action;

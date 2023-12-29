@@ -23,7 +23,7 @@
             </button>
         </li>
         <li>
-            <div *ngIf="appStateService.productState.status === 'LOADING'" class="spinner-border text-secondary ms-2" role="status">
+            <div *ngIf="loadingService.isLoading$ | async" class="spinner-border text-secondary ms-2" role="status">
             </div>
         </li>
     </ul>
